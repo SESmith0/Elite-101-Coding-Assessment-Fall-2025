@@ -1,6 +1,7 @@
 from library_books import library_books
 from datetime import datetime, timedelta
 
+
 # -------- Level 1 --------
 # TODO: Create a function to view all books that are currently available
 # Output should include book ID, title, and author
@@ -102,9 +103,8 @@ def menu():
         print("2. Search the database")
         print("3. Checkout one of our book")
         print("4. Return a checked out book")
-        print("5. Check your overdue books")
-        print("6. Most checked out books")
-        print("7. Exit")
+        print("5. Most checked out books")
+        print("6. Exit")
         print("")
         option = int(input("Choose what you would like to do: "))
         if option == 1:
@@ -116,11 +116,8 @@ def menu():
         elif option == 4:
             book_return()
         elif option == 5:
-            print("In Progress")
-            # overdue_list()
-        elif option == 6:
             top_three()
-        elif option == 7:
+        elif option == 6:
             print("Thank you for visitng, Goodbye!")
             break
 
